@@ -19,7 +19,7 @@ cd ..
 ~~~
 ## Training and Evaluation
 
-## Results [Download](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
+## Results [Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
 |Dataset|PSNR|SSIM|
 |------|-----|----|
 |SOTS-Indoor|43.21|0.997|
@@ -29,6 +29,6 @@ cd ..
 |Haze4K|34.12|0.99|
 
 ## Citation
-
+Will be provided when the paper is accepted.
 ## Contact
 Yinglong Wang, e-mail:wangyinglong2023@gmail.com, wechat:dauing2023
