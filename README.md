@@ -16,7 +16,7 @@ This part will be provided in the final version.
 |Dataset|PSNR|SSIM|
 |------|-----|----|
 |SOTS-Indoor|43.21|0.997|
-|SOTS-Outdoor|38.94|0.997|
+|SOTS-Outdoor|38.86|0.995|
 |Dense-Haze|17.13|0.65|
 |O-HAZE|20.55|0.81|
 |Haze4K|34.12|0.99|
