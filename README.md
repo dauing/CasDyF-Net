@@ -2,7 +2,7 @@
   
 **Authors**: Yinglong Wang, Bin He
 
-**Paper link**(arxiv): [CasDyF-Net: Image Dehazing via Cascaded Dynamic Filters](https://arxiv.org/abs/2409.08510)
+**Paper link**(arxiv): [Link of paper](https://arxiv.org/abs/2409.08510)
 
  **Abstract:**
 
@@ -16,7 +16,7 @@ For installing, follow these instructions:
 pip install -r requirements.txt
 ~~~
 ## Training and Evaluation
-This part will be provided in the final version.
+This part will be provided soon.
 ## Results 
 You can download the pre-trained **models** from this link:
 
