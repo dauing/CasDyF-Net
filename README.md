@@ -2,7 +2,7 @@
   
 **Authors**: Yinglong Wang, Bin He
 
-**Paper link**: [CasDyF-Net: Image Dehazing via Cascaded Dynamic Filters](https://arxiv.org/abs/2409.08510)
+**Paper link**(arxiv): [CasDyF-Net: Image Dehazing via Cascaded Dynamic Filters](https://arxiv.org/abs/2409.08510)
 
  **Abstract:**
 
