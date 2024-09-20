@@ -91,11 +91,12 @@ def _train(model, args):
             epoch_fft_adder(loss_fft.item())
 
             if (iter_idx + 1) % args.print_freq == 0:
-                print("Time: %7.4f Epoch: %03d Iter: %4d/%4d LR: %.10f Loss content: %7.4f Loss fft: %7.4f" % (
+                output_string = "Time: %7.4f Epoch: %03d Iter: %4d/%4d LR: %.10f Loss content: %7.4f Loss fft: %7.4f" % (
                     iter_timer.toc(), epoch_idx, iter_idx + 1, max_iter, scheduler.get_lr()[0], iter_pixel_adder.average(),
-                    iter_fft_adder.average()))
+                    iter_fft_adder.average())
+                print(output_string)
                 with open('./log/train_log.txt','a') as f:
-                    f.write('Epoch:{} Iter:{}/{} Loss:{}\n'.format(epoch_idx,iter_idx+1,max_iter,iter_pixel_adder.average()))
+                    f.write(output_string+'\n')
                 writer.add_scalar('Pixel Loss', iter_pixel_adder.average(), iter_idx + (epoch_idx-1)* max_iter)
                 writer.add_scalar('FFT Loss', iter_fft_adder.average(), iter_idx + (epoch_idx - 1) * max_iter)
                 
@@ -123,5 +124,6 @@ def _train(model, args):
             writer.add_scalar('PSNR', val, epoch_idx)
             if val >= best_psnr:
                 torch.save({'model': model.state_dict()}, os.path.join(args.model_save_dir, 'Best.pkl'))
+                best_psnr = val
     save_name = os.path.join(args.model_save_dir, 'Final.pkl')
     torch.save({'model': model.state_dict()}, save_name)

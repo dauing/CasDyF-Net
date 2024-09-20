@@ -31,28 +31,32 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
+    # General
     parser.add_argument('--mode', default='train', choices=['train', 'test'], type=str)
-    parser.add_argument('--data_dir', type=str, default='../Haze4K/Haze4K')
+
+    # Data
+    parser.add_argument('--dataset', type=str, default='Haze4K', help='Haze4K/ITS/OTS/DenseHaze/O-HAZE')
 
     # Train
     parser.add_argument('--batch_size', type=int, default=8)
-    parser.add_argument('--learning_rate', type=float, default=1e-4)
-    parser.add_argument('--weight_decay', type=float, default=0)
+    parser.add_argument('--learning_rate', type=float, default=4e-4)
     parser.add_argument('--num_epoch', type=int, default=1000)
     parser.add_argument('--print_freq', type=int, default=100)
     parser.add_argument('--num_worker', type=int, default=16)
-    parser.add_argument('--save_freq', type=int, default=100)
+    parser.add_argument('--save_freq', type=int, default=10)
     parser.add_argument('--valid_freq', type=int, default=10)
     parser.add_argument('--resume', type=str, default='results/model.pkl')
-
 
     # Test
     parser.add_argument('--test_model', type=str, default='')
     parser.add_argument('--save_image', type=bool, default=False, choices=[True, False])
 
     args = parser.parse_args()
+
     args.model_save_dir = os.path.join('results/')
     args.result_dir = os.path.join('results/','test')
+
+    args.data_dir = os.path.join('./datasets', args.dataset)
     if not os.path.exists(args.model_save_dir):
         os.makedirs(args.model_save_dir)
     main(args)
