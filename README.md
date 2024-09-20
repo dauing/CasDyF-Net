@@ -4,10 +4,6 @@
 
 **Paper link**(arxiv): [Link of paper](https://arxiv.org/abs/2409.08510)
 
- **Abstract:**
-
->Image dehazing aims to restore image clarity and visual quality by reducing atmospheric scattering and absorption effects. While deep learning has made significant strides in this area, more and more methods are constrained by network depth. Consequently, lots of approaches have adopted parallel branching strategies. however, they often prioritize aspects such as resolution, receptive field, or frequency domain segmentation without dynamically partitioning branches based on the distribution of input features. Inspired by dynamic filtering, we propose using cascaded dynamic filters to create a multi-branch network by dynamically generating filter kernels based on feature map distribution. To better handle branch features, we propose a residual multiscale block (RMB), combining different receptive fields. Furthermore, We also introduce a dynamic convolution-based local fusion method to merge features from adjacent branches. Experiments on RESIDE, Haze4K, and O-Haze datasets validate our method’s effectiveness, with our model achieving a PSNR of 43.21dB on the RESIDE-Indoor dataset.
-
 ## Installation
 The project is built with **PyTorch 3.8**, **PyTorch 1.10.0**, **CUDA 11.3**,
 
