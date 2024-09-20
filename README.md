@@ -6,13 +6,17 @@ Yinglong Wang, Bin He
 
 ## Installation
 The project is built with PyTorch 3.8, PyTorch 1.10.0, CUDA 11.3,
+
 For installing, follow these instructions:
 ~~~
 pip install -r requirements.txt
 ~~~
 ## Training and Evaluation
 This part will be provided in the final version.
-## Results [Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
+## Results 
+You can download the pre-trained models from this link:
+
+[Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
 |Dataset|PSNR|SSIM|
 |------|-----|----|
 |SOTS-Indoor|43.21|0.997|
