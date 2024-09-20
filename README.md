@@ -28,13 +28,13 @@ If you just need the output images of the models, you can download the **images*
 |SOTS-Outdoor|38.86|0.995|
 |Dense-Haze|17.13|0.65|
 |O-HAZE|20.55|0.81|
-|Haze4K|34.12|0.99|
+|Haze4K|35.73|0.99|
 
 ## Citation
 Will be provided when the paper is accepted.
 ## Contact
 name: Yinglong Wang
 
-e-mail:wangyinglong2023@gmail.com
+e-mail: wangyinglong2023@gmail.com
 
-wechat:dauing2023
+wechat: dauing2023
