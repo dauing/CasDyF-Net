@@ -17,6 +17,11 @@ This part will be provided in the final version.
 You can download the pre-trained models from this link:
 
 [Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
+
+If you just need the output images of the models, you can download the results from this link:
+
+[Download the images](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
+s
 |Dataset|PSNR|SSIM|
 |------|-----|----|
 |SOTS-Indoor|43.21|0.997|
