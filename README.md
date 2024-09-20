@@ -11,7 +11,7 @@ For installing, follow these instructions:
 pip install -r requirements.txt
 ~~~
 ## Training and Evaluation
-
+This part will be provided in the final version.
 ## Results [Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
 |Dataset|PSNR|SSIM|
 |------|-----|----|
