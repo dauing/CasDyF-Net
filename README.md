@@ -11,12 +11,6 @@ For installing, follow these instructions:
 conda install pytorch=1.8.1 torchvision=0.9.1 -c pytorch
 pip install tensorboard einops scikit-image pytorch_msssim opencv-python
 ~~~
-Install warmup scheduler:
-~~~
-cd pytorch-gradual-warmup-lr/
-python setup.py install
-cd ..
-~~~
 ## Training and Evaluation
 
 ## Results [Download the pre-trained models](https://drive.google.com/drive/folders/10zPlf5OPEz-VCO7HiAnbCNGgp29K2hOC?usp=drive_link)
