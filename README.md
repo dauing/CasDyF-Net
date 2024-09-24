@@ -26,8 +26,8 @@ If you just need the output images of the models, you can download the **images*
 |------|-----|----|
 |SOTS-Indoor|43.21|0.997|
 |SOTS-Outdoor|38.86|0.995|
-|Dense-Haze|17.13|0.65|
-|O-HAZE|20.55|0.81|
+|Dense-Haze|17.56|0.658|
+|O-HAZE|25.44|0.936|
 |Haze4K|35.73|0.99|
 
 ## Citation
