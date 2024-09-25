@@ -4,10 +4,6 @@
 
 **Paper link**(arxiv): [Link of paper](https://arxiv.org/abs/2409.08510)
 
-## Aknowledgements
-
-Thanks to the open-source project [FSNet(by c-yn)](https://github.com/c-yn/FSNet) for providing a reference for this project.
-
 ## Installation
 The project is built with **PyTorch 3.8**, **PyTorch 1.10.0**, **CUDA 11.3**,
 
