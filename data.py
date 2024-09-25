@@ -1,3 +1,8 @@
+# data.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import random
 import torchvision.transforms as transforms
 import torchvision.transforms.functional as F

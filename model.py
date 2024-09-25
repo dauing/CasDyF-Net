@@ -1,3 +1,8 @@
+# model.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 from math import gcd
 import time
 import torch

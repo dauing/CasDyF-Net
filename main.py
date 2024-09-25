@@ -1,3 +1,8 @@
+# main.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import os
 import torch
 import argparse

@@ -1,3 +1,8 @@
+# valid.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import torch
 from torchvision.transforms import functional as F
 from data import valid_dataloader

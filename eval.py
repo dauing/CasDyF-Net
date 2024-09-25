@@ -1,3 +1,8 @@
+# eval.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import os
 import torch
 from torchvision.transforms import functional as F

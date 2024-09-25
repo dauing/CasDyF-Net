@@ -1,3 +1,8 @@
+# train.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import os
 import torch
 from data import train_dataloader

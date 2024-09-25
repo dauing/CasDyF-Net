@@ -1,3 +1,8 @@
+#utils.py
+
+# SPDX-License-Identifier: MIT
+# See COPYING file for more details.
+
 import time
 import numpy as np
 
