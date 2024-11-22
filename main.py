@@ -40,7 +40,7 @@ if __name__ == '__main__':
     parser.add_argument('--mode', default='train', choices=['train', 'test'], type=str)
 
     # Data
-    parser.add_argument('--dataset', type=str, default='Haze4K', help='Haze4K/ITS/OTS/DenseHaze/O-HAZE')
+    parser.add_argument('--dataset', type=str, default='./Haze4K')
 
     # Train
     parser.add_argument('--batch_size', type=int, default=8)
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     args.model_save_dir = os.path.join('results/')
     args.result_dir = os.path.join('results/','test')
 
-    args.data_dir = os.path.join('./datasets', args.dataset)
+    args.data_dir = args.dataset
     if not os.path.exists(args.model_save_dir):
         os.makedirs(args.model_save_dir)
     main(args)
