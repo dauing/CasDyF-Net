@@ -12,7 +12,11 @@ For installing, follow these instructions:
 pip install -r requirements.txt
 ~~~
 ## Training and Evaluation
-This part will be provided soon.
+To Train ,you can run this cmd in your terminal:
+~~~
+python main.py --mode train --dataset yourpath --batch_size 8
+~~~
+You can also change the parameters in the main.py file.Saving your changes and running main.py will have the same effect
 ## Results 
 You can download the pre-trained **models** from this link:
 
