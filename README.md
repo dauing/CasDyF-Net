@@ -11,6 +11,7 @@ For installing, follow these instructions:
 ~~~
 pip install -r requirements.txt
 ~~~
+If you're having problems with your version, you can try installing each package one by one using pip alone
 ## Training and Evaluation
 To Train ,you can run this cmd in your terminal:
 ~~~
