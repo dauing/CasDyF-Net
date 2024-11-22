@@ -5,7 +5,7 @@
 **Paper link**(arxiv): [Link of paper](https://arxiv.org/abs/2409.08510)
 
 ## Installation
-The project is built with **PyTorch 3.8**, **PyTorch 1.10.0**, **CUDA 11.3**,
+The project is built with **Python 3.8**, **PyTorch 1.10.0**, **CUDA 11.3**,
 
 For installing, follow these instructions:
 ~~~
