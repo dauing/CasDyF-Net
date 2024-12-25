@@ -37,7 +37,6 @@ If you just need the output images of the models, you can download the **images*
 
 ## Citation
 ## Contact
-name: Yinglong Wang
 
 e-mail: wangyinglong2023@gmail.com
 
