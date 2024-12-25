@@ -36,7 +36,6 @@ If you just need the output images of the models, you can download the **images*
 |Haze4K|35.73|0.99|
 
 ## Citation
-Will be provided when the paper is accepted.
 ## Contact
 name: Yinglong Wang
 
