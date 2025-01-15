@@ -19,8 +19,10 @@ import cv2
 
 def _eval(model, args):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    state_dict = torch.load(args.test_model)
+
+    state_dict = torch.load(args.test_model,map_location=device)
     model.load_state_dict(state_dict['model'])
+    
     dataloader = test_dataloader(args.data_dir, batch_size=1, num_workers=0)
     torch.cuda.empty_cache()
     adder = Adder()
@@ -54,7 +56,8 @@ def _eval(model, args):
             pred_numpy = pred_clip.squeeze(0).to(device).numpy()
             label_numpy = label_img.squeeze(0).to(device).numpy()
 
-            label_img = (label_img).cuda()
+
+            label_img = (label_img).to(device)
             psnr_val = 10 * torch.log10(1 / f.mse_loss(pred_clip, label_img))
             down_ratio = max(1, round(min(H, W) / 256))	
             ssim_val = ssim(f.adaptive_avg_pool2d(pred_clip, (int(H / down_ratio), int(W / down_ratio))), 
@@ -79,4 +82,3 @@ def _eval(model, args):
         print('The average SSIM is %.5f dB' % (ssim_adder.average()))
 
         print("Average time: %f" % adder.average())
-
