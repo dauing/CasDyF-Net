@@ -18,9 +18,9 @@ from skimage import img_as_ubyte
 import cv2
 
 def _eval(model, args):
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     state_dict = torch.load(args.test_model)
     model.load_state_dict(state_dict['model'])
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     dataloader = test_dataloader(args.data_dir, batch_size=1, num_workers=0)
     torch.cuda.empty_cache()
     adder = Adder()
@@ -51,9 +51,8 @@ def _eval(model, args):
 
             pred_clip = torch.clamp(pred, 0, 1)
 
-            pred_numpy = pred_clip.squeeze(0).cpu().numpy()
-            label_numpy = label_img.squeeze(0).cpu().numpy()
-
+            pred_numpy = pred_clip.squeeze(0).to(device).numpy()
+            label_numpy = label_img.squeeze(0).to(device).numpy()
 
             label_img = (label_img).cuda()
             psnr_val = 10 * torch.log10(1 / f.mse_loss(pred_clip, label_img))
